@@ -1,0 +1,164 @@
+.navbar2 {
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  border-bottom: 1px solid #444;
+  &Menu {
+    margin-top: -6px;
+    width: 74px;
+    height: 500px;
+    border-right: 1px solid #444;
+    background-color: white;
+    height: 600px;
+  }
+  &Menu2 {
+    width: 74px;
+  }
+  &Menu3 {
+    width: 200px;
+  }
+  &Icon {
+    padding: 12px 25px;
+    cursor: pointer;
+    display: flex;
+    i {
+      font-size: 30px;
+      display: block;
+    }
+    .account {
+      margin: 0 40px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      &Manage {
+        cursor: pointer;
+        margin-top: -5px;
+        width: 40px;
+        height: 40px;
+        background-color: #219859;
+        position: relative;
+        border-radius: 50%;
+        p {
+          text-align: center;
+          margin-top: 7px;
+          color: white;
+          font-weight: 700;
+        }
+        &:hover .hoverAccount{
+            display: block;
+        }
+        .hoverAccount {
+            display: none;
+          position: absolute;
+          right: 0;
+          top: 50px;
+          width: 290px;
+          height: 158px;
+          background-color: #f5f5f5;
+          border: 1px solid #888;
+          &::before{
+              position: absolute;
+              content: "";
+              display: block;
+              width:200px;
+              right:0;
+              top:-13px;
+              height:10px;
+              background-color: transparent;
+          }
+          p{
+              color:#666;
+              &:hover{
+                 color:black;
+              }
+          }
+          .borderBottom{
+              border-bottom: 1px solid #444;
+              text-align: start;
+              margin-top: 0;
+              padding:10px 20px;
+              margin-top: 0 !important;
+          }
+          .borderBottom2{
+              text-align: start;
+              margin-top: -10px;
+              padding:0 20px;
+          }
+          &Infor {
+              border-bottom: 1px solid #444;
+            &Image {
+              width: 52px;
+              height: 52px;
+              background-color: #219859;
+              border-radius: 50%;
+              display: flex;
+              margin: 10px;
+              p {
+                padding-top: 7px;
+                color: white;
+                padding-left: 15px;
+              }
+              .content {
+                height: 52px;
+                margin-left: 30px;
+                p {
+                  margin: 0px 0 0 -65px;
+                  color:black;
+                  padding: 0;
+                }
+               
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .list1 {
+    // padding-top: 20px;
+    li {
+      list-style: none;
+      text-align: center;
+      margin-left: -32px;
+      padding: 20px 0;
+      a {
+        text-decoration: none;
+        font-size: 12px;
+        display: block;
+        color: black;
+      }
+      i {
+        font-size: 25px;
+        display: block;
+        padding-left: -10px;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+  .list2 {
+    li {
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-left: -32px;
+      padding: 10px 25px;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        color: black;
+      }
+      i {
+        font-size: 25px;
+        display: block;
+        // padding-left: -10px;
+        padding-right: 10px;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

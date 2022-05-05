@@ -1,0 +1,8 @@
+/tmp
+/data
+.DS_Store
+
+/node_modules
+.app.dev.yaml
+*.log
+.env
